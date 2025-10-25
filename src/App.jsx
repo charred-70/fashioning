@@ -8,9 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>what the hell</h1>
-      <div>hi im charx</div>
-      <p>hello</p>
+      <div>am i chopped</div>
     </>
   )
 }
