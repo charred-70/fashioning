@@ -11,13 +11,14 @@ import Clothes from './Components/Clothes'
 function App() {
   const [count, setCount] = useState(0)
 
-
-
   return (
     <>
       <h1>Unchopify</h1>
       <Link to="/avatar">
         <button class='discover'>Discover your Style!</button>
+      </Link>
+      <Link to="/chatbot">
+        <button class='discover'>Go to ChatBot!</button>
       </Link>
     </>
   )

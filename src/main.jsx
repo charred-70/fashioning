@@ -6,6 +6,9 @@ import Avatar from './Components/Avatar.jsx';
 import './index.css'
 import App from './App.jsx'
 import NavBar from './Components/NavBar.jsx';
+import Chat from './Components/Chat.jsx';
+import About from './Components/About.jsx';
+import Contact from './Components/Contact.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,7 +17,10 @@ createRoot(document.getElementById('root')).render(
       <NavBar/>
       <Routes>
         <Route path='/avatar' element={<Avatar/>}/>
-        <Route path='/' element={<App />}/>
+        <Route path='/chatbot' element={<Chat/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/' element={<App/>}/>
       </Routes> 
     </BrowserRouter>
   </StrictMode>,

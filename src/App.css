@@ -17,7 +17,7 @@
   left: 0;
   width: 100%;
   background-color: #ddd;
-  padding: 20px 0px;
+  padding: 10px 0px;
   display: flex;
   perspective: 1px;
   overflow: hidden;
@@ -53,8 +53,21 @@
 /*Button that goes to avatar page*/
 .discover {
   color:white;
+  margin: 50px;
 }
 
 .clothes {
   color: blue;
+}
+
+.prompt {
+  margin: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vh;
+  background-color: rgb(137, 183, 153);
 }
