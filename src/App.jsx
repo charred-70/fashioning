@@ -6,6 +6,7 @@ import './App.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import NavBar from './Components/NavBar'
 import Avatar from './Components/Avatar';
+import Clothes from './Components/Clothes'
 
 function App() {
   const [count, setCount] = useState(0)

@@ -15,7 +15,6 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/avatar' element={<Avatar/>}/>
         <Route path='/' element={<App />}/>
-
       </Routes> 
     </BrowserRouter>
   </StrictMode>,

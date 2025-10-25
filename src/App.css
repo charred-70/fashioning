@@ -10,7 +10,7 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
+/*Nav Bar*/
 .topnav {
   position: fixed;
   top: 0;
@@ -46,13 +46,15 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #white;
+  background-color: white;
   color: black;
 }
 
-
+/*Button that goes to avatar page*/
 .discover {
   color:white;
 }
 
-.
+.clothes {
+  color: blue;
+}
