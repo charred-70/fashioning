@@ -10,6 +10,15 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+
+h1 {
+  background-color: #f2e7fe;
+  color: black;
+  padding: 20px 40px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
 /*Nav Bar*/
 .topnav {
   position: fixed;
@@ -17,10 +26,13 @@
   left: 0;
   width: 100%;
   background-color: #ddd;
-  padding: 10px 0px;
+  padding: 10px 0;
   display: flex;
-  perspective: 1px;
+  justify-content: flex-end;
+  align-items: center;
+  /*perspective: 1px;*/
   overflow: hidden;
+  z-index: 100;
 }
 .topnav a {
   float: right;
@@ -40,7 +52,7 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #9999ff;
+  background-color: #a4a4ff;
   color: black;
 }
 
@@ -48,12 +60,6 @@
 .topnav a.active {
   background-color: white;
   color: black;
-}
-
-/*Button that goes to avatar page*/
-.discover {
-  color:white;
-  margin: 50px;
 }
 
 .clothes {
@@ -64,10 +70,169 @@
   margin: 50px;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents sideways scrolling */
+  height: 100%;
+}
+
 .container {
+  width: 80vw;
+  background: rgba(218, 192, 255, 0.4);
+  backdrop-filter: blur(5px);
+  min-height: 70vh;
+  max-height: 70vh;
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vh;
-  background-color: rgb(137, 183, 153);
+  align-items: center;
+  border-radius: 20px; 
+  border: 2px solid rgba(255, 255, 255, 0.5); 
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
+}
+
+.bot {
+  background-color: rgb(214, 214, 252);
+  margin: 10px;
+  padding: 12px 18px;
+  border-radius: 18px;
+  border-bottom-left-radius: 4px; /* Tail effect */
+  align-self: flex-start; /* Align to left */
+  max-width: 70%;
+  word-wrap: break-word;
+  margin-right: auto; /* Pushes to left */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align:left;
+}
+
+.user {
+  background-color: rgb(199, 235, 255);
+  margin: 10px;
+  padding: 12px 18px;
+  border-radius: 18px;
+  border-bottom-right-radius: 4px; /* Tail effect */
+  align-self: flex-end; /* Align to right */
+  max-width: 70%; /* Prevents messages from being too wide */
+  word-wrap: break-word; /* Wraps long words */
+  margin-left: auto; /* Pushes to right */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.chat{
+  margin-top: 30px;
+  margin: 10px;
+  max-height: none;
+  width: 100%;
+  transition: height 0.3s ease-out;
+  overflow: visible;
+  flex-grow: 1;
+  position: relative;
+  transform-origin: 50% 50%;
+  align-self: flex-start;
+}
+
+.chatInput {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-header {
+  align-self: center;
+  font-weight: bold;
+  font-size: xx-large;
+  padding-bottom: 5px;
+  box-shadow: #2c3e50;
+}
+
+.chat-image {
+  width: auto;
+  height: auto;
+}
+
+.text-box {
+  field-sizing: content;
+  min-width: 200px;
+  min-height: 40px;
+  resize: none;
+  overflow: hidden;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+  
+}
+
+.chat-image {
+    margin-right: auto; /* Pushes to left */
+    height: auto;
+    width: auto;
+}
+
+/*Button that goes to chatbot page*/
+.discover {
+  background-color: #dabbfc;
+  color: black;
+  border-radius: 12px;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.wardrobe {
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+/*wardrobe button that changes color when cursor is hovers over it*/
+
+.wardrobe-btn {
+  background-color: #e1d6f7;
+  color: rgb(0, 0, 0);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 200px;
+  width: 350px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-color: #333;
+}
+
+.wardrobe-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.prompter {
+  color: white;
+  margin-left: 20px;
+}
+
+.Intro {
+  max-width: 700px;
+  margin: 40px auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
 }
