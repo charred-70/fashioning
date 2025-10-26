@@ -11,17 +11,16 @@ import About from './Components/About.jsx';
 import Contact from './Components/Contact.jsx';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <React.StrictMode>
 
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <NavBar/>
       <Routes>
-        <Route path='/avatar' element={<Avatar/>}/>
         <Route path='/chatbot' element={<Chat/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/' element={<App/>}/>
       </Routes> 
     </BrowserRouter>
-  </StrictMode>,
+  </React.StrictMode>,
 )
