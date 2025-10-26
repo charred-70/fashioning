@@ -56,12 +56,6 @@ h1 {
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: white;
-  color: black;
-}
-
 .clothes {
   color: blue;
 }
@@ -235,4 +229,14 @@ html, body {
 
 .title {
   text-align: center;
+}
+
+.contact-pictures {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-pictures img {
+  height: 200px;
+  width: 100px;
 }
